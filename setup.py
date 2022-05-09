@@ -11,13 +11,13 @@ from distutils.core import setup
 
 LONGDOC = """
 dictmatch
-=====
+*********
 dictmatch：词典匹配工具
 完整文档见 ``README.md``
 GitHub: https://github.com/Bond-H/dictmatch
 
 安装说明
-========
+*********
 代码对 Python 2/3 均兼容
 - pip安装：`pip install dictmatch`
 - clone安装：先clone本代码库，然后运行 `python setup.py install`
