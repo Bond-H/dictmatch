@@ -9,12 +9,18 @@
 
 ## 快速使用
 ```Python
+from dictmatch import TriedTree
+
+# 待添加的词典，可以有value也可以没有
 words = ["百度":"ORG", "家":"m", "家家":0, "高科技":'adj', "技公":0, "科技":"n", "科技公司":'n'}
-text = '百度是家高科技公司'
+
+# 加入词典
 tree = TriedTree()
 for word, val in words.items():
     tree.add_word(word, val)
 
+# 进行查询
+text = '百度是家高科技公司'
 print("前向最大匹配结果:")
 for word, begin, end, val in tree.search(text):
     print(word, begin, end, val)
