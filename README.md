@@ -12,7 +12,7 @@
 from dictmatch import TriedTree
 
 # 待添加的词典，可以有value也可以没有
-words = ["百度":"ORG", "家":"m", "家家":0, "高科技":'adj', "技公":0, "科技":"n", "科技公司":'n'}
+words = {"百度":"ORG", "家":"m", "家家":0, "高科技":'adj', "技公":0, "科技":"n", "科技公司":'n'}
 
 # 加入词典
 tree = TriedTree()
